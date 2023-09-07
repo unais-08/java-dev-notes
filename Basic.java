@@ -113,13 +113,13 @@ public class Basic {
         System.out.println(agesOfPlayers[5]);
 
         // Explicit Declaration of an Array
-        double[] salaryOfEmployeesInK = { 20.5, 30.5, 55.6, 85.1 };
+        double[] salaryInDollars = { 20.5, 30.5, 55.6, 85.1 };
 
         // printing values
-        System.out.println(salaryOfEmployeesInK[0]);
-        System.out.println(salaryOfEmployeesInK[1]);
-        System.out.println(salaryOfEmployeesInK[2]);
-        System.out.println(salaryOfEmployeesInK[3]);
+        System.out.println(salaryInDollars[0]);
+        System.out.println(salaryInDollars[1]);
+        System.out.println(salaryInDollars[2]);
+        System.out.println(salaryInDollars[3]);
 
         /*
          * we want to have a more descriptive printout of the array itself, we need a
@@ -128,7 +128,7 @@ public class Basic {
          * define the class!
          */
 
-        String[] teamNames = { "India", "Pakistan", "Austrailia", "England", "Newzeland", "SouthAfrica", "Afghanistan",
+        String[] teamNames = { "India", "Pakistan", "Austrailia", "England", "Newzealand", "SouthAfrica", "Afghanistan",
                 "Bangladesh" };
 
         System.out.println(Arrays.toString(teamNames));
@@ -141,5 +141,33 @@ public class Basic {
         System.out.println(Arrays.toString(my_ages));// empty int array give 0
 
         // #### LOOPS IN JAVA ####
+
+        // This section demonstrates a 'while' loop.
+        int javaScore = 100; // Initialize the 'javaScore' to 100.
+        int myScore = 50; // Initialize 'myScore' to 50.
+        System.out.println(myScore); // Print 'myScore' to the console.
+        while (javaScore != myScore) { // Continue looping until 'javaScore' equals 'myScore'.
+            myScore++; // Increment 'myScore' by 1.
+            System.out.println(myScore); // Print the updated 'myScore' to the console.
+        }
+        System.out.println("my final count is " + myScore); // Print the final 'myScore'.
+
+        // This section demonstrates a 'for' loop.
+        int sum = 0; // Initialize the 'sum' to 0.
+        int naturalCount = 0; // Initialize 'naturalCount' to 0.
+        for (naturalCount = 0; naturalCount <= 10; naturalCount++) {
+            sum += naturalCount; // Add 'naturalCount' to 'sum' in each iteration.
+        }
+        System.out.println("sum of first 10 natural number is " + sum); // Print the sum.
+
+        // This section demonstrates a 'do-while' loop.
+        int sumOfNaturalNum = 0; // Initialize the 'sumOfNaturalNum' to 0.
+        int NaturalNumCount = 0; // Initialize 'NaturalNumCount' to 0.
+        do {
+            NaturalNumCount++; // Increment 'NaturalNumCount' by 1.
+            sumOfNaturalNum += NaturalNumCount; // Add 'NaturalNumCount' to 'sumOfNaturalNum'.
+        } while (NaturalNumCount != 10); // Continue looping until 'NaturalNumCount' equals 10.
+        System.out.println(sumOfNaturalNum); // Print the sum of natural numbers.
+
     }
 }
