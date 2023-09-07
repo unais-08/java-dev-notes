@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // This is a Java class named 'Basic' containing the main method.
 public class Basic {
     public static void main(String[] args) {
@@ -90,5 +92,54 @@ public class Basic {
         if (!genderIsMale) {
             System.out.println("Female");
         }
+
+        // ####Arrays in Java####
+
+        // Array declaration
+        int[] agesOfPlayers = new int[6];
+        agesOfPlayers[0] = 25;
+        agesOfPlayers[1] = 34;
+        agesOfPlayers[2] = 33;
+        agesOfPlayers[3] = 28;
+        agesOfPlayers[4] = 29;
+        agesOfPlayers[5] = 30;
+
+        // printing values
+        System.out.println(agesOfPlayers[0]);
+        System.out.println(agesOfPlayers[1]);
+        System.out.println(agesOfPlayers[2]);
+        System.out.println(agesOfPlayers[3]);
+        System.out.println(agesOfPlayers[4]);
+        System.out.println(agesOfPlayers[5]);
+
+        // Explicit Declaration of an Array
+        double[] salaryOfEmployeesInK = { 20.5, 30.5, 55.6, 85.1 };
+
+        // printing values
+        System.out.println(salaryOfEmployeesInK[0]);
+        System.out.println(salaryOfEmployeesInK[1]);
+        System.out.println(salaryOfEmployeesInK[2]);
+        System.out.println(salaryOfEmployeesInK[3]);
+
+        /*
+         * we want to have a more descriptive printout of the array itself, we need a
+         * toString() method that is provided by the Arrays package in Java.
+         * [import java.util.Arrays] We put this at the top of the file, before we even
+         * define the class!
+         */
+
+        String[] teamNames = { "India", "Pakistan", "Austrailia", "England", "Newzeland", "SouthAfrica", "Afghanistan",
+                "Bangladesh" };
+
+        System.out.println(Arrays.toString(teamNames));
+
+        // Empty Array in java
+        String[] menuItems = new String[5];
+        System.out.println(menuItems.length); // .length to find the length of an array
+        int[] my_ages = new int[5];
+        System.out.println(Arrays.toString(menuItems)); // empty string array give null
+        System.out.println(Arrays.toString(my_ages));// empty int array give 0
+
+        // #### LOOPS IN JAVA ####
     }
 }
