@@ -1,4 +1,12 @@
-# Chapter: Methods in Java
+- [Chapter : Methods in Java](#chapter-1-Methods-in-Java)
+- [Chapter: Arrays in Java](#chapter-Arrays-in-Java)
+ 
+
+
+
+
+
+# Chapter 1: Methods in Java
 
 In Java, a method is a block of code that performs a specific task or action. Methods are essential components of Java programs, as they allow you to organize your code into reusable and manageable chunks. Here are the key concepts related to methods in Java:
 
