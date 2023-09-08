@@ -1,3 +1,11 @@
+
+ /*
+         * In Java, a method is a block of code that performs a specific task or action.
+         * Methods are used to break down a program into smaller, more manageable
+         * pieces, making it easier to read, understand, and maintain your code. Methods
+         * are also reusable, which means you can call them multiple times from
+         * different parts of your program.
+         */
 // Define a class called Calculator
 class Calculator {
     // Define a method called addNumbers that takes two integers (num1 and num2) as parameters

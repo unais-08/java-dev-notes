@@ -169,15 +169,43 @@ public class Basic {
         } while (NaturalNumCount != 10); // Continue looping until 'NaturalNumCount' equals 10.
         System.out.println(sumOfNaturalNum); // Print the sum of natural numbers.
 
-        // Methods in java
+        /*
+         * Strings in Java
+         * strings in java are immutable
+         * Methods in java
+         */
+
+        String hashtag = "#100Daysofcode";
+        String hashtag02 = "#30daysofcode";
+
+        // length of string
+        System.out.println("string length is " + hashtag.length());
+
+        // substring
+        System.out.println("substring of hashtag is " + hashtag.substring(4, 8));
+
+        // charAt
+        System.out.println(hashtag.charAt(4));
+
+        // equals in string
+        System.out.println(hashtag02.equals("100days"));
+        System.out.println(hashtag02.equals(hashtag));
+        System.out.println(hashtag.equals(hashtag));
+
+        // concat
+        System.out.println(hashtag.concat(" " + hashtag02));
 
         /*
-         * In Java, a method is a block of code that performs a specific task or action.
-         * Methods are used to break down a program into smaller, more manageable
-         * pieces, making it easier to read, understand, and maintain your code. Methods
-         * are also reusable, which means you can call them multiple times from
-         * different parts of your program.
+         * indexOf
+         * The indexOf() method returns the position of the first occurrence of
+         * specified character(s) in a string.
          */
+        System.out.println(hashtag.indexOf("a"));
+        System.out.println(hashtag.indexOf("o", 9));
+       
+        //toLowerCase and toUpperCase
+        System.out.println(hashtag.toLowerCase());
+        System.out.println(hashtag.toUpperCase());
 
     }
 }
