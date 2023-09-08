@@ -34,7 +34,7 @@ class Calculator {
 }
 
 // Define a class called Foundation
-public class Foundation {
+public class MethodsInJava {
     // Define a method called sayMyfunction with no parameters
     public void sayMyfunction() {
         // Print a message to the console
@@ -66,7 +66,7 @@ public class Foundation {
         System.out.println(calculator.divNumbers(10, 10));
 
         // Create an instance of the Foundation class
-        Foundation refToSayMyfunction = new Foundation();
+        MethodsInJava refToSayMyfunction = new MethodsInJava();
 
         // Call the sayMyfunction method of the Foundation object
         refToSayMyfunction.sayMyfunction();

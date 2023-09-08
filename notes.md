@@ -1,5 +1,5 @@
 - [Chapter : Methods in Java](#chapter-1-Methods-in-Java)
-- [Chapter: Arrays in Java](#chapter-Arrays-in-Java)
+- [Chapter : Arrays in Java](#chapter-Arrays-in-Java)
  
 
 
