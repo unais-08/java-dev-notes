@@ -2,10 +2,6 @@
 - [Chapter : Arrays in Java](#chapter-Arrays-in-Java)
  
 
-
-
-
-
 # Chapter 1: Methods in Java
 
 In Java, a method is a block of code that performs a specific task or action. Methods are essential components of Java programs, as they allow you to organize your code into reusable and manageable chunks. Here are the key concepts related to methods in Java:
@@ -135,3 +131,7 @@ An array is a data structure that allows you to store multiple values of the sam
 - If you need a resizable array, consider using `ArrayList` from the Java Collections Framework. It provides dynamic sizing and many useful methods.
 
 Arrays are fundamental data structures in Java and are crucial for many programming tasks. Understanding array concepts and how to work with them efficiently is essential for Java developers.
+
+
+
+# Chapter: String In java
