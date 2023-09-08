@@ -169,5 +169,15 @@ public class Basic {
         } while (NaturalNumCount != 10); // Continue looping until 'NaturalNumCount' equals 10.
         System.out.println(sumOfNaturalNum); // Print the sum of natural numbers.
 
+        // Methods in java
+
+        /*
+         * In Java, a method is a block of code that performs a specific task or action.
+         * Methods are used to break down a program into smaller, more manageable
+         * pieces, making it easier to read, understand, and maintain your code. Methods
+         * are also reusable, which means you can call them multiple times from
+         * different parts of your program.
+         */
+
     }
 }
