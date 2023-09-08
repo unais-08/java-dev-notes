@@ -1,6 +1,4 @@
-# Chapter 1: Introduction
-
-### Methods in Java
+# Chapter: Methods in Java
 
 In Java, a method is a block of code that performs a specific task or action. Methods are essential components of Java programs, as they allow you to organize your code into reusable and manageable chunks. Here are the key concepts related to methods in Java:
 
@@ -66,9 +64,9 @@ Remember that methods help make your code more organized, readable, and maintain
 
 
 
-# Chapter 2: Methods
+# Chapter: Arrays in Java
 
-### Arrays in Java
+### 
 
 An array is a data structure that allows you to store multiple values of the same data type under a single variable name. Arrays are widely used in Java for various tasks, and they come with several important concepts and features:
 
