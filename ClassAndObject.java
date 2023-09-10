@@ -7,7 +7,6 @@ class Car {
 
 class BMW extends Car {
     String brand = "BMW";
-
 }
 
 public class ClassAndObject {

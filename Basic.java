@@ -202,8 +202,8 @@ public class Basic {
          */
         System.out.println(hashtag.indexOf("a"));
         System.out.println(hashtag.indexOf("o", 9));
-       
-        //toLowerCase and toUpperCase
+
+        // toLowerCase and toUpperCase
         System.out.println(hashtag.toLowerCase());
         System.out.println(hashtag.toUpperCase());
 
