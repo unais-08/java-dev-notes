@@ -27,7 +27,7 @@ public class Oops_01 {
         Student S3 = new Student("Huzefa", 60, true);
         Student S4 = new Student("Danish", 70, false);
         Student S5 = new Student("Rehan", 66, true);
-        Student S6 = new Student("Unknown...");
+        Student S6 = new Student("Unknown...");//Constructor overload with diffrent parameters
         System.out.println(S1.pass);
         System.out.println(S2.pass);
         System.out.println(S3.pass);
