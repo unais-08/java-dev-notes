@@ -6,7 +6,7 @@
 
 // ✅ Java Variables — Clear & Concise Breakdown
 
-public class VariableDemo { // Class to hold our main method
+public class VariableDemo{ // Class to hold our main method
 
     // 🟢 b. Instance Variables (Non-Static Fields):
     // - Declared inside a class but outside any method, constructor, or block.
