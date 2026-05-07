@@ -1,148 +1,282 @@
 /**
  * File: DataTypes.java
- * Description: Explains Java primitive and non-primitive data types with
- * examples.
- * To Compile: javac DataTypeDemo.java
- * To Run: java DataTypeDemo
+ * Description:
+ * Explains Java primitive and non-primitive data types with examples.
  */
 
-// ✅ Java Data Types — Clear & Concise Breakdown
 
-public class DataTypes { // Class to hold our main method
+public class DataTypes {
 
-    public static void main(String[] args) { // Main method - entry point of the program
+
+    public static void main(String[] args) {
+
+        // ==================================================
+        // 1. PRIMITIVE DATA TYPES
+        // ==================================================
+
+        /*
+         * Primitive data types:
+         * - Built into Java
+         * - Store actual values directly in memory
+         * - Faster and memory efficient
+         * - Not objects
+         */
 
         // --------------------------------------------------
-        // 🔹 1. PRIMITIVE TYPES
+        // byte
         // --------------------------------------------------
+        /*
+         * Size    : 1 byte (8 bits)
+         * Range   : -128 to 127
+         * Default : 0
+         *
+         * Used for small integer values.
+         */
 
-        // Java's primitive types are fundamental building blocks. They store simple
-        // values
-        // directly in memory and are not objects.
-
-        // 🟢 byte
-        // Range: -128 to 127. Default: 0. Stores 8-bit signed two's complement integer.
         byte age = 30;
         byte temperature = -5;
-        System.out.println("byte example: " + age); // Output: 30
 
-        // 🟢 short
-        // Range: -32,768 to 32,767. Default: 0. Stores 16-bit signed two's complement
-        // integer.
+        System.out.println("byte example: " + age);
+
+        // --------------------------------------------------
+        // short
+        // --------------------------------------------------
+        /*
+         * Size    : 2 bytes (16 bits)
+         * Range   : -32,768 to 32,767
+         * Default : 0
+         *
+         * Used when int is not required.
+         */
+
         short year = 2025;
         short distance = -15000;
-        System.out.println("short example: " + year); // Output: 2025
 
-        // 🟢 int
-        // Range: -2^31 to 2^31 - 1 (approx. +/- 2 billion). Default: 0. Stores 32-bit
-        // signed two's complement integer.
-        int population = 1_000_000; // Underscores for readability (Java 7+)
+        System.out.println("short example: " + year);
+
+        // --------------------------------------------------
+        // int
+        // --------------------------------------------------
+        /*
+         * Size    : 4 bytes (32 bits)
+         * Range   : Approx. ±2 billion
+         * Default : 0
+         *
+         * Most commonly used integer type.
+         */
+
+        int population = 1_000_000; // Underscore improves readability
         int studentId = 123456789;
-        System.out.println("int example: " + population); // Output: 1000000
 
-        // 🟢 long
-        // Range: -2^63 to 2^63 - 1 (very large numbers). Default: 0L. Stores 64-bit
-        // signed two's complement integer.
-        long worldPopulation = 8_000_000_000L; // 'L' suffix denotes a long literal
-        // long galacticDistance = 9876543210987654321L;
-        System.out.println("long example: " + worldPopulation); // Output: 8000000000
+        System.out.println("int example: " + population);
 
-        // 🟢 float
-        // Represents single-precision 32-bit floating-point numbers. Default: 0.0f.
-        float price = 19.99f; // 'f' suffix denotes a float literal
+        // --------------------------------------------------
+        // long
+        // --------------------------------------------------
+        /*
+         * Size    : 8 bytes (64 bits)
+         * Default : 0L
+         *
+         * Used for very large integer values.
+         * Suffix 'L' is required.
+         */
+
+        long worldPopulation = 8_000_000_000L;
+
+        System.out.println("long example: " + worldPopulation);
+
+        // --------------------------------------------------
+        // float
+        // --------------------------------------------------
+        /*
+         * Size    : 4 bytes
+         * Default : 0.0f
+         *
+         * Used for decimal numbers.
+         * Less precise than double.
+         * Suffix 'f' is required.
+         */
+
+        float price = 19.99f;
         float pi = 3.14159f;
-        System.out.println("float example: " + price); // Output: 19.99
 
-        // 🟢 double
-        // Represents double-precision 64-bit floating-point numbers (default for
-        // decimals). Default: 0.0d.
+        System.out.println("float example: " + price);
+
+        // --------------------------------------------------
+        // double
+        // --------------------------------------------------
+        /*
+         * Size    : 8 bytes
+         * Default : 0.0d
+         *
+         * More precise than float.
+         * Default type for decimal values.
+         */
+
         double preciseValue = 12345.678901234;
-        double gravity = 9.80665; // 'd' suffix is optional but good practice (9.80665d)
-        System.out.println("double example: " + preciseValue); // Output: 12345.678901234
+        double gravity = 9.80665;
 
-        // 🟢 boolean
-        // Represents one of two values: true or false. Default: false.
+        System.out.println("double example: " + preciseValue);
+
+        // --------------------------------------------------
+        // boolean
+        // --------------------------------------------------
+        /*
+         * Values  : true or false
+         * Default : false
+         *
+         * Used for conditions and decision making.
+         */
+
         boolean isActive = true;
         boolean hasPermission = false;
-        System.out.println("boolean example: " + isActive); // Output: true
 
-        // 🟢 char
-        // Represents a single 16-bit Unicode character. Default: '\u0000' (null
-        // character).
+        System.out.println("boolean example: " + isActive);
+
+        // --------------------------------------------------
+        // char
+        // --------------------------------------------------
+        /*
+         * Size    : 2 bytes
+         * Default : '\u0000'
+         *
+         * Stores a single Unicode character.
+         */
+
         char grade = 'A';
         char initial = 'J';
-        char copyrightSymbol = '\u00A9'; // Unicode representation
-        System.out.println("char example: " + grade); // Output: A
+        char copyrightSymbol = '\u00A9';
+
+        System.out.println("char example: " + grade);
+
+        // ==================================================
+        // 2. NON-PRIMITIVE (REFERENCE) TYPES
+        // ==================================================
+
+        /*
+         * Non-primitive types:
+         * - Store references (memory addresses)
+         * - Created using classes
+         * - Can call methods
+         * - Usually larger and more powerful
+         */
 
         // --------------------------------------------------
-        // 🔸 2. NON-PRIMITIVE (REFERENCE) TYPES
+        // String
         // --------------------------------------------------
+        /*
+         * String:
+         * - Sequence of characters
+         * - Immutable in Java
+         * - Most commonly used reference type
+         */
 
-        // Non-primitive types (also called reference types) do not store the actual
-        // value
-        // directly but store a reference (memory address) to where the object is stored
-        // in the heap memory.
-
-        // 🟠 String
-        // A sequence of characters. Strings in Java are immutable (cannot be changed
-        // once created).
         String userName = "Unais Shaikh";
         String welcomeMessage = "Hello, " + userName + "!";
-        System.out.println("String example: " + welcomeMessage); // Output: Hello, Unais Shaikh!
 
-        // 🟠 Arrays
-        // Used to store multiple values of the same type in a single variable.
-        // Arrays are objects in Java.
-        int[] numbers = { 1, 2, 3, 4, 5 };
-        String[] fruits = new String[3]; // Declares an array of 3 Strings
+        System.out.println("String example: " + welcomeMessage);
+
+        // --------------------------------------------------
+        // Arrays
+        // --------------------------------------------------
+        /*
+         * Arrays:
+         * - Store multiple values of the same type
+         * - Fixed size
+         * - Arrays are objects in Java
+         */
+
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        String[] fruits = new String[3];
+
         fruits[0] = "Apple";
         fruits[1] = "Banana";
         fruits[2] = "Cherry";
-        System.out.println("Array example: " + numbers[0]); // Output: 1
-        System.out.println("Array example: " + fruits[1]); // Output: Banana
 
-        // 🟠 Classes (Custom Objects)
-        // User-defined types that encapsulate data and behavior.
-        // (Detailed explanation in OOP section)
-        Person p1 = new Person("Alice", 30);
-        System.out.println("Custom Object example: " + p1.name); // Output: Alice
-
-        // 🟠 Interfaces
-        // A blueprint of a class. It has static constants and abstract methods.
-        // (Detailed explanation in OOP section)
+        System.out.println("Array example: " + numbers[0]);
+        System.out.println("Array example: " + fruits[1]);
 
         // --------------------------------------------------
-        // 🧠 Summary of Data Types
+        // Classes / Objects
         // --------------------------------------------------
         /*
-         * ✔ Primitive Types (value directly stored):
-         * - byte, short, int, long (for whole numbers)
-         * - float, double (for floating-point numbers)
-         * - boolean (for true/false)
-         * - char (for single characters)
-         * 
-         * ✔ Non-Primitive Types (reference to an object):
-         * - String (most common)
-         * - Arrays
-         * - Classes (e.g., custom objects like Person)
-         * - Interfaces
-         * - And many more from Java API (e.g., ArrayList, HashMap)
-         * 
+         * Classes:
+         * - User-defined data types
+         * - Used to create objects
+         * - Combine data + behavior
+         */
+
+        Person p1 = new Person("Alice", 30);
+
+        System.out.println("Custom Object example: " + p1.name);
+
+        // --------------------------------------------------
+        // Interfaces
+        // --------------------------------------------------
+        /*
+         * Interfaces:
+         * - Blueprint of a class
+         * - Contains abstract methods
+         * - Used for abstraction
+         *
+         * (Detailed later in OOP concepts)
+         */
+
+        // ==================================================
+        // SUMMARY
+        // ==================================================
+
+        /*
+         * Primitive Types:
+         * --------------------------------------------------
+         * byte      -> Small integers
+         * short     -> Medium integers
+         * int       -> Standard integers
+         * long      -> Large integers
+         * float     -> Decimal numbers (less precision)
+         * double    -> Decimal numbers (more precision)
+         * boolean   -> true / false
+         * char      -> Single character
+         *
+         * Non-Primitive Types:
+         * --------------------------------------------------
+         * String
+         * Arrays
+         * Classes
+         * Interfaces
+         * Collections (ArrayList, HashMap, etc.)
+         *
          * Key Difference:
-         * - Primitive variables store the actual value.
-         * - Non-primitive variables store the memory address (reference) of the object.
+         * --------------------------------------------------
+         * Primitive Types:
+         *      Store actual values directly.
+         *
+         * Non-Primitive Types:
+         *      Store reference (memory address) of objects.
          */
     }
 }
 
-// Nested class for demonstration purposes within DataTypeDemo.java
-// In a real project, this would typically be in its own file: Person.java
+// ==========================================================
+// PERSON CLASS
+// ==========================================================
+
+/*
+ * Nested class used only for demonstration.
+ *
+ * In real projects:
+ *      Person.java should be a separate file.
+ */
+
 class Person {
+
     String name;
     int age;
 
     // Constructor
     public Person(String name, int age) {
+
         this.name = name;
         this.age = age;
     }
