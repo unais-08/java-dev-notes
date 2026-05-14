@@ -1,10 +1,10 @@
 /**
  * File: PolymorphismDemo.java
  *
- * Description:
- * Complete revision notes for Polymorphism in Java.
- *
+ * Description: *
  * Topics Covered:
+ * Complete revision notes for Polymorphism in Java.
+
  * --------------------------------------------------
  * 1. What is Polymorphism?
  * 2. Types of Polymorphism
